@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  wedding-website:
+    build: .
+    ports:
+      - "80:80"
+    restart: always
+    volumes:
+      - ./:/usr/share/nginx/html
